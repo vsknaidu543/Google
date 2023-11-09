@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Google</title>
+</head>
+<body background="lightyellow">
+<div class="nav">
+<ul>
+<li><a href="https://mail.google.com/mail/u/0">Gmail</a>
+</li>
+<li><a href="https://www.google.co.in/imghp?h1=en&ogb1">Images</a>
+</li>
+<li><a href="">
+<img src="C:\Users\Swamy Naidu\OneDrive\Pictures\Saved Pictures\buttonsymbolofninedots_80014.png" id="sixdg">
+</a>
+</li>
+<li>
+<a href="https://accounts.google.co.in/">
+<button id="sgbtn">
+Sign In
+</button>
+</li>
+</ul>
+</div> 
+<div class="goolelogo">
+<img src="D:\visual studio\pngwing.com.png">
+</div>
+<form id="frmsrch">
+<input type="text" id="txtsrch" placeholder="search Google or type URL" >
+<img src="D:\visual studio\google search icon.png" id="srchicon"> 
+<img src="D:\visual studio\google mic icon.png" id="micicon"> 
+<div class="btns">
+<input type="submit" value="Google search" id="submittxt">
+<button id="feelbtn"><a href="https://www.google.com/doodles/">
+I Am Feeling Good</a></button>
+
+</form>
+<div class="icon">
+    <img src="C:\Users\Swamy Naidu\OneDrive\Pictures\Saved Pictures\facebook.png" id="txtface">
+    <img src="C:\Users\Swamy Naidu\OneDrive\Pictures\Saved Pictures\flipkart.png" id="txtflip">
+    <img src="C:\Users\Swamy Naidu\OneDrive\Pictures\Saved Pictures\addshortcut.png" id="txtadd"></div>
+<script>
+let srch = document.getElementById('frmsrch');
+let srchicon = document.getElementById('srchicon');
+srch.onsubmit = search;
+srchicon.onclick = search;
+function search(){
+window.location = 'www.gooogle.com/search?q='+document.getElementById('txtsrch').value;
+return false;
+}
+</script>
+
+</body>
+</html>
